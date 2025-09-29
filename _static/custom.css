@@ -1,0 +1,101 @@
+/*
+ * PyData Sphinx Theme customization
+ * Aesthetic: Industrial / robotics — dark graphite, vivid orange, balanced teal
+ */
+
+/* LIGHT THEME */
+html[data-theme="light"] {
+  /* Brand */
+  --pst-color-primary: #F97316;              /* Vibrant orange */
+  --pst-color-secondary: #0D9488;            /* Teal */
+  --pst-color-secondary-highlight: #14B8A6;  /* Lighter teal */
+
+  /* Links / code links */
+  --pst-color-inline-code-links: #F97316;
+  --pst-color-link: var(--pst-color-primary);
+  --pst-color-link-hover: #EA580C;           /* Deeper orange */
+
+  /* Semantic */
+  --pst-color-info: var(--pst-color-secondary);
+  --pst-color-info-highlight: var(--pst-color-secondary);
+  --pst-color-info-bg: #D1FAE5;              /* Teal-50 */
+  --pst-color-attention: #F59E0B;            /* Amber for warnings */
+  --pst-color-target: #FEF3C7;               /* Warm yellow highlight */
+
+  /* Text */
+  --pst-color-text-base: #1F2937;            /* Slate-800 */
+  --pst-color-text-muted: #6B7280;           /* Slate-500 */
+
+  /* Surfaces */
+  --pst-color-background: #FFFFFF;
+  --pst-color-on-background: #FFFFFF;
+  --pst-color-surface: #F3F4F6;              /* Gray-100 */
+  --pst-color-on-surface: #E5E7EB;           /* Gray-200 */
+  --pst-color-shadow: #D1D5DB;
+  --pst-color-border: #E5E7EB;
+
+  /* Inline code */
+  --pst-color-inline-code: #0D9488;          /* Teal-600 */
+
+  /* Tables / hovers */
+  --pst-color-table-row-hover-bg: #FFF7ED;   /* Orange-50 */
+
+  /* Accent (use sparingly) */
+  --pst-color-accent: #10B981;               /* Emerald */
+}
+
+/* DARK THEME */
+html[data-theme="dark"] {
+  /* Brand */
+  --pst-color-primary: #FB923C;              /* Lighter orange for dark mode */
+  --pst-color-secondary: #5EEAD4;            /* Teal-300 */
+  --pst-color-secondary-highlight: #2DD4BF;
+
+  /* Links / code links */
+  --pst-color-inline-code-links: #FDBA74;    /* Orange-300 */
+  --pst-color-link: var(--pst-color-primary);
+  --pst-color-link-hover: #F97316;
+
+  /* Semantic */
+  --pst-color-info: var(--pst-color-secondary);
+  --pst-color-info-highlight: var(--pst-color-secondary);
+  --pst-color-info-bg: #042F2E;              /* Deep teal background */
+  --pst-color-attention: #F59E0B;
+  --pst-color-target: #78350F;               /* Rich amber */
+
+  /* Text */
+  --pst-color-text-base: #E5E7EB;            /* Gray-200 */
+  --pst-color-text-muted: #9CA3AF;           /* Gray-400 */
+
+  /* Surfaces */
+  --pst-color-background: #111827;           /* Graphite slate */
+  --pst-color-on-background: #1E293B;
+  --pst-color-surface: #1F2937;
+  --pst-color-on-surface: #374151;
+  --pst-color-shadow: #0F172A;
+  --pst-color-border: #374151;
+
+  /* Inline code */
+  --pst-color-inline-code: #5EEAD4;          /* Teal-300 */
+
+  /* Tables / hovers */
+  --pst-color-table-row-hover-bg: #2F1F14;   /* Muted warm hover */
+
+  /* Accent */
+  --pst-color-accent: #34D399;
+}
+
+/* General tweaks */
+a { text-decoration: none !important; }
+.bd-header-announcement a,
+.bd-header-version-warning a { color: #5EEAD4; }
+.form-control {
+  border-radius: 0 !important;
+  border: none !important;
+  outline: none !important;
+}
+.navbar-brand,
+.navbar-icon-links {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
